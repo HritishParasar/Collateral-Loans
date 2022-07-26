@@ -16,6 +16,8 @@ namespace LoanManagementMicroservice.Repository
         }
         public CustomerLoan GetLoanDetails(int loanId,int customerId)
         {
+
+
             foreach(var customerLoanDetail in customerLoansDetails)
             {
                 if(customerLoanDetail.LoanID == loanId && customerLoanDetail.CustomerID == customerId)
